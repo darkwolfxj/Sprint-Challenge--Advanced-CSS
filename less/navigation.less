@@ -1,6 +1,10 @@
 // Navigation code here
 .fixed-nav{
-  &:before{
+    @media @phone{
+      position:fixed;
+      top:0;
+      width:100%;
+    &:before{
     content: "";
     background: url(image.jpg);
     opacity: 0.5;
@@ -12,10 +16,7 @@
     z-index: -1;   
     background-color:@nav-bg;
   }
-  
-  position:fixed;
-  top:0;
-  width:100%;
+}
 }
 .nav{
     padding:2%;
