@@ -1,5 +1,15 @@
 // Mixins Here
+.max-width(){
+    max-width:800px;
+}
 .center(){
     display:flex;
     justify-content:center;
+}
+//Parametric Mixins Here
+.button(@width, @font-size){
+    width:@width;
+    background-color:@btn-bg-color;
+    color:white;
+    font-size:@font-size;
 }

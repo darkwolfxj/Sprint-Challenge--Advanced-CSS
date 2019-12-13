@@ -175,32 +175,12 @@ footer {
   max-width: 800px;
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 .block .title {
   padding: 2%;
   font-size: 4rem;
   display: flex;
   justify-content: center;
-}
-.block .nav {
-  padding: 2%;
-  display: flex;
-  justify-content: center;
-}
-.block .nav nav {
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  width: 50%;
-}
-.block .nav nav a {
-  text-decoration: none;
-  color: black;
-}
-.block .nav nav a:hover {
-  color: grey;
 }
 .home .intro h2 {
   padding: 15px;
@@ -243,6 +223,13 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border: 1px solid black;
+  width: 5%;
+  background-color: #22283A;
+  color: white;
+  font-size: 2rem;
 }
 .home .walk .walk-img {
   width: 46%;
