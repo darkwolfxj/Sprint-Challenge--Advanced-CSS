@@ -1,1 +1,26 @@
 // Navigation code here
+.nav{
+    padding:2%;
+    .center();
+  }
+  .nav {
+    @media @phone{
+      width:100%;
+    }
+  }
+  .nav nav{
+    @media @phone{
+      width:90%;
+    }
+    font-size:2rem;
+    .center();
+    justify-content:space-between;
+    width:50%;
+    }
+      a{
+        text-decoration:none;
+        color:black;
+          &:hover{
+            color:grey;
+          }
+      }
