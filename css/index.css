@@ -291,6 +291,10 @@ footer {
   background-color: #22283A;
   color: white;
   font-size: 2rem;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
@@ -308,6 +312,10 @@ footer {
     background-color: #22283A;
     color: white;
     font-size: 2rem;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
   }
   .home .walk .walk-text .btn:hover {
     background-color: white;
