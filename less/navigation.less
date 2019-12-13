@@ -1,1 +1,45 @@
 // Navigation code here
+.fixed-nav{
+    @media @phone{
+      position:fixed;
+      top:0;
+      width:100%;
+    &:before{
+    content: "";
+    background: url(image.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-color:@nav-bg;
+  }
+}
+}
+.nav{
+    padding:2%;
+    .center();
+  }
+  .nav {
+    @media @phone{
+      width:100%;
+    }
+  }
+  .nav nav{
+    @media @phone{
+      width:90%;
+    }
+    font-size:2rem;
+    .center();
+    justify-content:space-between;
+    width:50%;
+    }
+      a{
+        text-decoration:none;
+        color:black;
+          &:hover{
+            color:grey;
+          }
+      }
