@@ -7,9 +7,18 @@
     justify-content:center;
 }
 //Parametric Mixins Here
-.button(@width, @font-size){
+.button(@width,@height,@font-size){
+    border:1px solid black;
     width:@width;
+    height:@height;
+    border-radius:5px;
+    .center();
+    align-items:center;
     background-color:@btn-bg-color;
     color:white;
     font-size:@font-size;
+        &:hover{
+            background-color:white;
+            color:@btn-bg-color;
+        }
 }

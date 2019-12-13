@@ -1,5 +1,8 @@
 //heading, nav and image
 .block{
+  img{
+    border-radius:5px;
+  }
   display:flex;
   flex-direction:column;
   .title{
@@ -29,6 +32,16 @@
   }
 
   .space-images {
+    .blast{
+      @media @phone{
+        width:100%;
+      }
+    }
+    .launch, .sky{
+      @media @phone{
+        display:none;
+      }
+    }
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -59,8 +72,15 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+      @media @phone{
+        padding:15px;
+        flex-direction:column-reverse;
+        width:100%;
+      }
     .walk-text {
+      @media @phone{
+        width:100%;
+      }
       width: 50%;
 
       h3 {
@@ -70,14 +90,22 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-        border:1px solid black;
-        .button(5%, 2rem);
+      .btn{
+        .button(35%,20%,2rem);
+        @media (max-width:500px){
+          .button(100%,8vh,2rem);
+        }
       }
     }
 
     .walk-img {
+      max-width:100%;
+      @media @phone{
+        width:100%;
+        margin:0;
+        padding-bottom:5%;
+        .center();
+      }
       width: 46%;
       margin-left: 4%;
       
@@ -88,5 +116,6 @@
       }
     }
   }
+ 
 }// home
 
